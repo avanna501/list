@@ -16,6 +16,8 @@ int main(int argc, char *argv[])
     MyClass class1;
     class1.file_name="C:\\Users\\inter\\projects_a\\new_list\\list\\list.txt";
 
+    class1.reading_();
+
     QQmlApplicationEngine engine;
     engine.rootContext()->setContextProperty("currentDateTime", QDateTime::currentDateTime());
     engine.rootContext()->setContextProperty("A", &class1);
